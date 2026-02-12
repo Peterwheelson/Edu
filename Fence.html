@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заборы и ограждения</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9edf5 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Шапка с вкладками */
+        .tabs {
+            background: #2c3e50;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 0 20px;
+        }
+
+        .tabs ul {
+            list-style: none;
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tabs li {
+            margin-right: 5px;
+        }
+
+        .tabs a {
+            display: block;
+            padding: 15px 25px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .tabs a:hover {
+            background: #34495e;
+            color: white;
+        }
+
+        .tabs a.active {
+            background: #3498db;
+            color: white;
+        }
+
+        /* Основной контент */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .content {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .fence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .fence-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 25px;
+            transition: transform 0.3s ease;
+            border-left: 5px solid #3498db;
+        }
+
+        .fence-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(52,152,219,0.2);
+        }
+
+        .fence-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .fence-card p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .fence-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        /* Футер */
+        footer {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 30px 20px;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h4 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .footer-section p {
+            margin-bottom: 8px;
+            color: #bdc3c7;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+            color: #95a5a6;
+            font-size: 0.9em;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info span {
+            margin-right: 10px;
+            color: #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .tabs ul {
+                flex-direction: column;
+            }
+            
+            .tabs li {
+                margin-right: 0;
+                margin-bottom: 2px;
+            }
+            
+            .tabs a {
+                border-radius: 3px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с вкладками -->
+    <div class="tabs">
+        <ul>
+            <li><a href="#" class="active">Main</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <div class="content">
+            <h1>🏠 Искусство ограждений</h1>
+            <p style="font-size: 1.2em; color: #666; margin-bottom: 30px;">
+                Заборы — это не просто границы участка, это архитектурные элементы, 
+                сочетающие в себе функциональность, безопасность и эстетику.
+            </p>
+
+            <div class="fence-grid">
+                <div class="fence-card">
+                    <div class="fence-icon">🌳</div>
+                    <h3>Деревянные заборы</h3>
+                    <p>Классическое решение для загородных домов. Экологичность, 
+                    натуральная текстура и возможность воплотить любой дизайн.</p>
+                    <p>✓ Штакетник ✓ Ранчо ✓ Плетень</p>
+                    <div class="price-tag">от 2500 ₽/м²</div>
+                </div>
+
+                <div class="fence-card">
+                    <div class="fence-icon">⚙️</div>
+                    <h3>Металлические ограждения</h3>
+                    <p>Прочность и долговечность. Кованые элементы придают 
+                    изысканность, а профнастил обеспечивает максимальную приватность.</p>
+                    <p>✓ Ковка ✓ Сетка ✓ Профнастил</p>
+                    <div class="price-tag">от 1800 ₽/м²</div>
+                </div>
+
+                <div class="fence-card">
+                    <div class="fence-icon">🏛️</div>
+                    <h3>Каменные и кирпичные</h3>
+                    <p>Монументальные сооружения, которые служат десятилетиями. 
+                    Идеальны для создания престижного образа участка.</p>
+                    <p>✓ Кирпич ✓ Натуральный камень</p>
+                    <div class="price-tag">от 4500 ₽/м²</div>
+                </div>
+
+                <div class="fence-card">
+                    <div class="fence-icon">🌿</div>
+                    <h3>Живые изгороди</h3>
+                    <p>Природное ограждение из кустарников и растений. 
+                    Создает уникальный микроклимат и радует глаз зеленью.</p>
+                    <p>✓ Туя ✓ Барбарис ✓ Самшит</p>
+                    <div class="price-tag">от 1200 ₽/м²</div>
+                </div>
+
+                <div class="fence-card">
+                    <div class="fence-icon">🔄</div>
+                    <h3>3D ограждения</h3>
+                    <p>Современные панели из сварной сетки. Оптимальное 
+                    сочетание цены, прочности и эстетики.</p>
+                    <p>✓ Секционные ✓ Антивандальные</p>
+                    <div class="price-tag">от 1600 ₽/м²</div>
+                </div>
+
+                <div class="fence-card">
+                    <div class="fence-icon">🏭</div>
+                    <h3>Промышленные заборы</h3>
+                    <p>Специализированные решения для предприятий и складов. 
+                    Максимальная защита периметра.</p>
+                    <p>✓ Еврозаборы ✓ Железобетон</p>
+                    <div class="price-tag">индивидуально</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 20px; background: #f0f7fd; border-radius: 8px;">
+                <h3 style="color: #2c3e50; margin-bottom: 15px;">✨ Интересные факты о заборах:</h3>
+                <ul style="list-style-position: inside; color: #666;">
+                    <li style="margin-bottom: 8px;">Самый длинный забор в мире находится в Австралии — 5614 км</li>
+                    <li style="margin-bottom: 8px;">В средневековой Европе заборы служили оборонительными сооружениями</li>
+                    <li style="margin-bottom: 8px;">Правильно установленный забор может снизить уровень шума на 30%</li>
+                    <li style="margin-bottom: 8px;">Первые заборы появились более 8000 лет назад</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер с контактами -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>О компании</h4>
+                <p>Студия заборов "DeepSeek Fence" — создаем идеальные границы с 2015 года.</p>
+                <p>Более 5000 довольных клиентов по всей стране.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <ul class="contact-info">
+                    <li><span>📍</span> ул. Заборная, 15, офис 42, г. Дивный</li>
+                    <li><span>📞</span> +7 (999) 123-45-67</li>
+                    <li><span>✉️</span> info@deepseek-fence.ru</li>
+                    <li><span>🕒</span> Пн-Пт: 9:00 - 20:00, Сб-Вс: 10:00 - 18:00</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Мы в соцсетях</h4>
+                <p>Telegram: @deepseek_fence</p>
+                <p>VK: vk.com/deepseek_fence</p>
+                <p>WhatsApp: +7 (999) 123-45-67</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2024 DeepSeek Fence. Все права защищены.</p>
+            <p style="margin-top: 5px;">Создано с помощью DeepSeek для демонстрации возможностей верстки</p>
+        </div>
+    </footer>
+</body>
+</html>
