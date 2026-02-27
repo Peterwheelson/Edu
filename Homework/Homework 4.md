@@ -84,3 +84,8 @@
 ![](Pasted%20image%2020260221153852.png)
 
 Получил итоговый пресет настроек по задаче.
+
+#homework
+
+[Homework 3](Homework%203.md)
+[Homework 5](Homework%205.md)

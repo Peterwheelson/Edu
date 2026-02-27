@@ -31,3 +31,5 @@
 ```
 
 ![](Pasted%20image%2020260219170850.png)
+#homework
+[Homework 2](Homework/Homework%202.md)
